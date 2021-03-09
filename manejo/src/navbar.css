@@ -1,0 +1,25 @@
+nav{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.items{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5vw
+}
+.item{
+    margin: 0px 20px 0px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #626262;
+}
+.logo{
+    margin-left: 10vw;
+
+}
