@@ -1,30 +1,30 @@
 import './navbar.css'
-
-function Navegacion() {
+import Carrito from './CartWidget'
+function Navegacion(props) {
     return(
         <nav>
             
-            <div class="logo">
+            <div className="logo">
                 LOGO
             </div>
-            <div class="items">
-                <div class="item">
+            <div className="items">
+                <div className="item">
                     INICIO
                 </div>
-                <div class="item">
+                <div className="item">
                     NOSOTROS
                 </div>
-                <div class="item">
+                <div className="item">
                     CLASES
                 </div>
-                <div class="item">
+                <div className="item">
                     CONTACTANOS
                 </div>
-                <div class="item">
-                    CARRITO
+                <div className="item"> 
+                    <Carrito />               
                 </div>
             </div>
-        </nav>
+        </nav>       
     )
 }
 
