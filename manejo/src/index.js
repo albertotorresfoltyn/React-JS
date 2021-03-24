@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Navegacion from './componentes/Navbar'
+import Navegacion from './componentes/navbar/Navbar'
 import reportWebVitals from './reportWebVitals';
-import ItemListContainer from './componentes/itemListContainer'
+import ItemListContainer from './componentes/itemListContainer/itemListContainer'
+import LandingPage from './componentes/landingPage/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navegacion />
-    <ItemListContainer name="container"/> 
+    <LandingPage />
+      <ItemListContainer/>       
   </React.StrictMode>,
   document.getElementById('root')
 );

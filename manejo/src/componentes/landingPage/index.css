@@ -1,0 +1,71 @@
+.landingPage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.landingPage h1{
+    font-size: 128px;
+    font-weight: lighter;
+}
+.landingPage p{
+    font-size: 30px;
+    font-weight: lighter;
+}
+:root {
+    --timing-anim-sipka: 200ms;
+    --main-color-sipka: #020202;
+    --hover-color-sipka: #020202;
+  }
+  .svpath{
+    fill:none;
+    stroke:var(--main-color-sipka);
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  
+  }
+  .sipka_vertical path {
+    transition: all var(--timing-anim-sipka) ease-in-out;
+  }
+  .sipka_vertical:hover path,
+  .sipka_vertical.animuj path {stroke:var(--hover-color-sipka);}
+  .sipka_vertical:hover {cursor:pointer;}
+  .sipka_vertical .sv1 {
+    transform-origin: 50% 50%;
+    animation: v1animOF var(--timing-anim-sipka) ease-in-out forwards;
+  }
+  .sipka_vertical:hover .sv1,
+  .sipka_vertical.animuj .sv1 {
+    animation: v1animON var(--timing-anim-sipka) ease-in-out forwards;
+  }
+  @keyframes v1animON {
+    0% {transform: translateY(0px);}
+    100% { transform: translateY(17px); }
+  }
+  @keyframes v1animOF {
+    0% {transform: translateY(17px);}
+    100% { transform: translateY(0px); }
+  }
+  
+  .sipka_vertical .sv2 {
+    transform-origin: 50% 0%;
+  }
+  .sipka_vertical .sv2 {
+    stroke-dasharray: 44;
+    animation: v2anim 5s ease-in-out infinite 5s;
+  }
+  .sipka_vertical:hover .sv2,
+  .sipka_vertical.animuj .sv2 {
+    transform:scale(1,1.37);
+  }
+  @keyframes v2anim {
+    0% {stroke-dashoffset: 0;}
+    25% {stroke-dashoffset: 44;}
+    50% {stroke-dashoffset: 0;}
+  }
+  .flecha{
+    padding-top: 10vh;
+}

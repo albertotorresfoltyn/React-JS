@@ -1,4 +1,4 @@
-import './css/navbar.css'
+import './navbar.css'
 import Carrito from './CartWidget'
 function Navegacion(props) {
     return(
