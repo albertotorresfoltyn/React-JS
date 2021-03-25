@@ -4,12 +4,7 @@ import './itemListContainer.css'
 
 
     function ItemListContainer(props) {
-        useEffect(()=>{
-            const contador=setTimeout(() => {
-                setCount('Tiempo')
-            }, 2000);
-            return()=>clearTimeout(contador)
-        },[]);
+
         return(
             <div>
             <div className="productos" >
