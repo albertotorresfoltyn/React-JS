@@ -1,5 +1,5 @@
 .producto{
-    border: solid 1px black;
+    border: solid 1px transparent;
     height: 50vh;
     width: 25%;
 }
@@ -19,8 +19,11 @@
 button{
     color: white;
     background-color: #202020;
+    margin-top: 5px;
     outline: none;
     height: 50px;
     width: 100px;
-    border-radius: 7px;
+    border-radius: 8px;
+    border: transparent;
+    cursor: pointer;
 }

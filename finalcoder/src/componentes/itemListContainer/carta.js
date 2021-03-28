@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './carta.css'
 
  function Item(props) {
@@ -12,7 +13,7 @@ import './carta.css'
                 <div className="autor">
                     {props.autor}
                 </div>
-                <button>Ver mas</button>
+               <Link to={'/producto/'}><button>Ver mas</button></Link>
             </div>
         </div>
 

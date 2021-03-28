@@ -1,0 +1,34 @@
+.error{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    margin-bottom: 5vh;
+}
+h1{
+    margin-bottom: 5vh;
+    font-weight: lighter;
+}
+a:active {
+    text-decoration: none;
+    color: white;
+  }
+   a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: white;
+}
+   a:hover {
+    text-decoration: none;
+    color: white;
+}
+  
+  

@@ -21,5 +21,44 @@ nav{
 }
 .logo{
     margin-left: 10vw;
-
+    font-family: 'Leckerli One', cursive;
 }
+.item a:link {
+    text-decoration: none;
+    color: #626262;
+  }
+  
+  .item a:visited {
+    text-decoration: none;
+    color: #626262;
+  }
+  
+  .item a:hover {
+    text-decoration: none;
+    color: #626262;
+    
+  }
+  
+  .item a:active {
+    text-decoration: none;
+    color: #626262;
+  }
+  .item a:link {
+    text-decoration: none;
+    color: #626262;
+  }
+  
+  .logo a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logo a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logo a:active {
+    text-decoration: none;
+    color: black;
+  }

@@ -27,7 +27,6 @@ import ItemDetail from './detalle/itemDetail'
             <Item autor="Lorenzo Durante" titulo="01"/>
             <Item autor="Lorenzo Durante" titulo="01"/>     
             </div>
-            <ItemDetail />     
             </div>
         )
     }

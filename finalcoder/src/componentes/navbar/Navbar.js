@@ -1,28 +1,20 @@
 import './navbar.css'
 import Carrito from './CartWidget'
+import { Link } from 'react-router-dom'
 function Navegacion(props) {
     return(
         <nav>
             
             <div className="logo">
-                LOGO
+                <Link to={'/'}>artmajeur</Link>
             </div>
+
             <div className="items">
-                <div className="item">
-                    INICIO
-                </div>
-                <div className="item">
-                    NOSOTROS
-                </div>
-                <div className="item">
-                    CLASES
-                </div>
-                <div className="item">
-                    CONTACTANOS
-                </div>
-                <div className="item"> 
-                    <Carrito />               
-                </div>
+                <div className="item"><Link to={'/'}>HOME</Link></div>
+                <div className="item"><Link to={'/nosotros'}>NOSOTROS</Link></div>
+                <div className="item"><Link to={'/funcionamiento'}>COMO FUNCIONA</Link></div>
+                <div className="item"><Link to={'/carrito'}><Carrito /></Link></div>
+
             </div>
         </nav>       
     )
