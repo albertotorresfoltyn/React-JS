@@ -15,7 +15,7 @@ body {
   outline: none;
 }
 
- a:active {
+a:active {
   text-decoration: none;
 }
  a:link {
@@ -28,4 +28,3 @@ a:visited {
  a:hover {
   text-decoration: none;
 }
-

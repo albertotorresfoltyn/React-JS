@@ -10,6 +10,7 @@ import Item from './componentes/itemListContainer/detalle/itemDetail'
 import ItemDetail from './componentes/itemListContainer/detalle/itemDetail';
 import Carrito from './componentes/carrito/carrito'
 import Error from './componentes/error404/error'
+import Footer from './componentes/footer/footer'
 
 
 ReactDOM.render(
@@ -26,7 +27,7 @@ ReactDOM.render(
         </Route>
 
 
-        <Route exact path="/producto/:productoId">
+        <Route exact path="/producto">
           <ItemDetail/>
         </Route>
 
@@ -34,14 +35,13 @@ ReactDOM.render(
           <Carrito/>
         </Route>
       
-
-
-      
         <Route component={Error}/>
+      
       </Switch>
     
     
     </BrowserRouter>
+    <Footer/>
   
   </React.StrictMode>,
   document.getElementById('root')
