@@ -2,6 +2,7 @@ import react,{useState,useEffect,setCount}from 'react';
 import Item from "./carta";
 import './itemListContainer.css'
 import ItemDetail from './detalle/itemDetail'
+import InfoJson from '../info/info.js'
 
     function ItemListContainer(props) {
 
