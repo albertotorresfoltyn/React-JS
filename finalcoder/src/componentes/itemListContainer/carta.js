@@ -15,7 +15,7 @@ import {InfoJson,InfoJson2} from'../info/info'
                 <div className="autor">
                     {props.autor}
                 </div>
-                <Link to={"/producto"}><button>Ver mas</button></Link>
+                <Link to={`/producto/${props.id}`}><button>Ver mas</button></Link>
 
             </div>
         </div>

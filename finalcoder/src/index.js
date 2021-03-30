@@ -43,9 +43,8 @@ ReactDOM.render(
         <Route exact path="/carrito">
           <Carrito/>
         </Route>
-      
+       
         <Route component={Error}/>
-      
       </Switch>
     
     
