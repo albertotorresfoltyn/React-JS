@@ -13,27 +13,26 @@ import {InfoJson,InfoJson2} from'../info/info'
         setCarga(true)
         const promesa= new Promise((res, rej) => {      
             setTimeout(()=>{return {infoJson, infoJson2}},2000)
-       });
-       return(
-        <div className="producto">
-        <img src={props.imagen} />
-        <div className="infoAbajo">
-            <div className="titulo">
-                {props.titulo}
-            </div>
-            <div className="autor">
-                {props.autor}
-            </div>
-            <Link to={`/producto/${props.id}`}><button>Ver mas</button></Link>
-
-        </div>
-    </div>
-    )
-      promesa.then((result) => {      
-           setProd(result);     
-           setCarga(false);    
-      });
-});      
+        });
+        promesa.then((result) => {      
+            setProd(result);     
+            setCarga(false);    
+        });
+    });  
+    
+    return(<div className="producto">
+           <img src={props.imagen} />
+           <div className="infoAbajo">
+               <div className="titulo">
+                   {props.titulo}
+               </div>
+               <div className="autor">
+                   {props.autor}
+               </div>
+               <Link to={`/producto/${props.id}`}><button>Ver mas</button></Link>
+           </div>
+       </div>)      
 }
+
 export default Item
 
