@@ -11,6 +11,7 @@ import ItemDetail from './componentes/itemListContainer/detalle/itemDetail';
 import Carrito from './componentes/carrito/carrito'
 import Error from './componentes/error404/error'
 import Footer from './componentes/footer/footer'
+import {InfoJson,InfoJson2} from'./componentes/info/info'
 
 
 ReactDOM.render(
@@ -27,9 +28,17 @@ ReactDOM.render(
         </Route>
 
 
-        <Route exact path="/producto">
-          <ItemDetail/>
-        </Route>
+        {InfoJson.map((ruta,index )=>{
+                return(
+                <div>
+                  <Route exact path={`/producto/:${ruta.id}`}>
+                  <ItemDetail/>
+                  </Route>
+                </div>
+                )
+
+            })}
+
 
         <Route exact path="/carrito">
           <Carrito/>

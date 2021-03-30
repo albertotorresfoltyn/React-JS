@@ -16,7 +16,7 @@ import {InfoJson,InfoJson2} from'../info/info.js'
                 <div>
                     <div className="productos">
                     <div className="producto">
-                        <Item autor={infoDetalle.id}/>
+                        <Item autor={infoDetalle.titulo}  titulo={infoDetalle.titulo} imagen={infoDetalle.imagen}/>
                     </div>
 
                     </div>
@@ -31,7 +31,7 @@ import {InfoJson,InfoJson2} from'../info/info.js'
                 <div>
                     <div className="productos">
                     <div className="producto">
-                        <Item autor={infoDetalle.id}/>
+                        <Item autor={infoDetalle.autor} titulo={infoDetalle.titulo} imagen={infoDetalle.imagen}/>
                     </div>
 
                     </div>
