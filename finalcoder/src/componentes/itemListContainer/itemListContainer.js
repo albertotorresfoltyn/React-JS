@@ -2,33 +2,47 @@ import react,{useState,useEffect,setCount}from 'react';
 import Item from "./carta";
 import './itemListContainer.css'
 import ItemDetail from './detalle/itemDetail'
-import InfoJson from '../info/info.js'
+import {InfoJson,InfoJson2} from'../info/info.js'
 
     function ItemListContainer(props) {
+        InfoJson.map((infoDetalle,index )=>{
 
+        })
         return(
             <div>
             <div className="productos" >
-                <Item autor="Lorenzo Durante" titulo="01"/>
-                <Item autor="Lorenzo Durante" titulo="01"/>
-                <Item autor="Lorenzo Durante" titulo="01"/>
-            </div> 
-            <div className="productos" >
-            <Item autor="Lorenzo Durante" titulo="01"/>
-            <Item autor="Lorenzo Durante" titulo="01"/>
-            <Item autor="Lorenzo Durante" titulo="01"/>     
+            {InfoJson.map((infoDetalle,index )=>{
+                return(
+                <div>
+                    <div className="productos">
+                    <div className="producto">
+                        <Item autor={infoDetalle.id}/>
+                    </div>
+
+                    </div>
+                </div>
+                )
+
+            })}
             </div>
             <div className="productos" >
-                <Item autor="Lorenzo Durante" titulo="01"/>
-                <Item autor="Lorenzo Durante" titulo="01"/>
-                <Item autor="Lorenzo Durante" titulo="01"/> 
-            </div> 
-            <div className="productos" >
-            <Item autor="Lorenzo Durante" titulo="01"/>
-            <Item autor="Lorenzo Durante" titulo="01"/>
-            <Item autor="Lorenzo Durante" titulo="01"/>     
+            {InfoJson2.map((infoDetalle,index )=>{
+                return(
+                <div>
+                    <div className="productos">
+                    <div className="producto">
+                        <Item autor={infoDetalle.id}/>
+                    </div>
+
+                    </div>
+                </div>
+                )
+
+            })}
             </div>
+
             </div>
+
         )
     }
 
